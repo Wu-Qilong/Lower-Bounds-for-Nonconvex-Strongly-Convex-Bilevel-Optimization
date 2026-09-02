@@ -1,4 +1,4 @@
-# Lean verification of the `κ_y^8 ε^-6` stochastic bilevel lower bound
+# Lean verification of the $\kappa_y^{8} \epsilon^{-6}$ stochastic bilevel lower bound
 
 This is a standalone Lean 4 + Mathlib project for the two-coordinate hard
 instance underlying the stochastic NC--SC bilevel lower bound
