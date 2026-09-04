@@ -1,4 +1,5 @@
 # Lean verification of the $\kappa_y^{8}\epsilon^{-6}$ stochastic bilevel lower bound
+[![Lean Action CI](https://github.com/Wu-Qilong/Lower-Bounds-for-Nonconvex-Strongly-Convex-Bilevel-Optimization/actions/workflows/lean_action_ci.yml/badge.svg)](https://github.com/Wu-Qilong/Lower-Bounds-for-Nonconvex-Strongly-Convex-Bilevel-Optimization/actions/workflows/lean_action_ci.yml)
 
 This is a standalone Lean 4 + Mathlib project for the two-coordinate hard
 instance used to prove the stochastic NC--SC bilevel lower bound
