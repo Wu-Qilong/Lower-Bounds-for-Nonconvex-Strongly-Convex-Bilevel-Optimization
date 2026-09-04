@@ -1,9 +1,9 @@
-# Lean verification of the κᵧ⁸ ε⁻⁶ stochastic bilevel lower bound
+# Lean verification of the $\kappa_y^8 \epsilon^{-6}$ stochastic bilevel lower bound
 
 This is a standalone Lean 4 + Mathlib project for the two-coordinate hard instance used to prove the stochastic nonconvex--strongly-convex bilevel lower bound
 
 $$
-\Omega( \frac{\Delta \kappa_y^2}{\epsilon^2} \max(1, \frac{\sigma^2 \kappa_y^6}{\epsilon^4}) ).
+\Omega\Bigl( \frac{\Delta \kappa_y^2}{\epsilon^2} \max\Bigl(1, \frac{\sigma^2 \kappa_y^6}{\epsilon^4}\Bigr) \Bigr).
 $$
 
 In the noise-dominated regime,
@@ -49,7 +49,7 @@ First, after substitution of the exact lower solution, the population hyper-obje
 Second, the randomized lower-gradient contribution satisfies
 
 $$
-\|G\| = O( \frac{\eta^2}{\kappa} ).
+\|G\| = O\Bigl( \frac{\eta^2}{\kappa} \Bigr).
 $$
 
 When $\sigma=0$, set
@@ -61,13 +61,13 @@ $$
 When $\sigma>0$, choose
 
 $$
-p=\min(1, \frac{C_v\eta^4}{\sigma^2\kappa^2}).
+p=\min\Bigl(1, \frac{C_v\eta^4}{\sigma^2\kappa^2}\Bigr).
 $$
 
 For every $\sigma\ge 0$, this gives
 
 $$
-\frac{1}{p}=\max(1, \frac{\sigma^2\kappa^2}{C_v\eta^4}).
+\frac{1}{p}=\max\Bigl(1, \frac{\sigma^2\kappa^2}{C_v\eta^4}\Bigr).
 $$
 
 The stationarity and chain-length parameters are
@@ -79,25 +79,25 @@ $$
 and
 
 $$
-T=\Theta( \frac{\Delta\kappa^2}{\epsilon^2} ).
+T=\Theta\Bigl( \frac{\Delta\kappa^2}{\epsilon^2} \Bigr).
 $$
 
 Substituting the choice of $\eta$ into the Bernoulli probability gives
 
 $$
-\frac{1}{p}=\max(1, \frac{\sigma^2\kappa^6}{256C_v\epsilon^4}).
+\frac{1}{p}=\max\Bigl(1, \frac{\sigma^2\kappa^6}{256C_v\epsilon^4}\Bigr).
 $$
 
 The one-frontier progress argument therefore gives the call scale
 
 $$
-\Theta( \frac{T}{p} ) = \Theta( \frac{\Delta\kappa^2}{\epsilon^2} \max(1, \frac{\sigma^2\kappa^6}{\epsilon^4}) ),
+\Theta\Bigl( \frac{T}{p} \Bigr) = \Theta\Bigl( \frac{\Delta\kappa^2}{\epsilon^2} \max\Bigl(1, \frac{\sigma^2\kappa^6}{\epsilon^4}\Bigr) \Bigr),
 $$
 
 up to universal numerical constants. In the noise-dominated regime, the stochastic term is
 
 $$
-\Theta( \frac{\Delta\sigma^2\kappa^8}{\epsilon^6} ).
+\Theta\Bigl( \frac{\Delta\sigma^2\kappa^8}{\epsilon^6} \Bigr).
 $$
 
 ## Analytic guarantees checked in Lean
@@ -120,17 +120,17 @@ Subject to the adaptive-Haar premise described under **Verification boundary**, 
 The mixed derivative bounds are
 
 $$
-\|DR\|=O( \frac{\eta^2}{\kappa} ),
+\|DR\|=O\Bigl( \frac{\eta^2}{\kappa} \Bigr),
 $$
 
 $$
-\|D^2R\|=O( \frac{\eta}{\kappa} ),
+\|D^2R\|=O\Bigl( \frac{\eta}{\kappa} \Bigr),
 $$
 
 and
 
 $$
-\|D^3R\|=O( \frac{1}{\kappa} ).
+\|D^3R\|=O\Bigl( \frac{1}{\kappa} \Bigr).
 $$
 
 The intrinsic condition number satisfies
@@ -170,7 +170,7 @@ $$
 The construction-scale call bound is
 
 $$
-\max(\frac{\Delta\kappa^2}{\epsilon^2}, \frac{\Delta\sigma^2\kappa^8}{\epsilon^6}).
+\max\Bigl(\frac{\Delta\kappa^2}{\epsilon^2}, \frac{\Delta\sigma^2\kappa^8}{\epsilon^6}\Bigr).
 $$
 
 ## Strong-convexity and condition-number notation
